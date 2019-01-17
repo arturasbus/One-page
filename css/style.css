@@ -14,6 +14,10 @@ body{
     color: #c7c3c2;
 }
 
+.nav-link:hover{
+    color: #fff;
+}
+
 .header{
     background-image: url("../img/bg.jpg");
     height: 500px;
@@ -22,6 +26,18 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow:inset 0 0 0 2000px rgba(75,0,0,0.5);
+}
 
+.about{
+    width: 100%;
+    height: 400px;
+    background-color: #f35e3e;
+}
 
+.about h3{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
