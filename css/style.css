@@ -6,18 +6,31 @@ body{
  /* Global */
 
 .container{
-    width: 80%;
+    width: 90%;
     margin: auto;
     overflow: hidden;
     padding: 0%;
 }
 
+hr {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    max-width: 50px;
+    border-width: 3px;
+    border-color: #f05f40;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
 /* Header */
 
 header{
-    background: #fff; 
+    width: 100%;
+    position: fixed;
+    padding: 20px;
     color: #c7c3c2; 
-    min-height: 70px;   
+    z-index: 1;  
 }
 
 header a{
@@ -51,20 +64,26 @@ header nav{
     margin-top: 15px;
 }
 
+
 header a:hover{
     color: #fff;
+    transition: 0.4s;
 }
 
 /* Slider */
 
 .slider{
     background: url('../img/bg.jpg');
+    opacity: 0.8;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: auto;
     text-align: center;
     color: #fff;
+}
+
+.slider .container{
+    padding-top: 50%;
 }
 
 .slider h1{
@@ -74,8 +93,9 @@ header a:hover{
 }
 
 .slider p{
-    color: #c7c3c2;
+    color: #c7c3c2;  
 }
+
 
 .slider button{
     background-color: #f05f40;
@@ -99,8 +119,22 @@ header a:hover{
 .about-us{
     background: #f05f40;
     color: #fff;
-    padding: 30px;
+    padding: 100px;
     text-align: center;
+}
+
+.about-us .container{
+    width: 80%;
+}
+
+.about-us .hr-light {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    max-width: 50px;
+    text-align: center;
+    border-width: 3px;
+    border-color: #fff;
+    margin: auto;
 }
 
 .about-us h1{
@@ -133,11 +167,21 @@ header a:hover{
 
 /* Services */
 
+.services{
+    padding: 70px;
+}
+
 .services .box{
     float: left;
     width: 22%;
     padding: 10px;
+    padding-bottom: 50px;
     text-align: center;
+}
+
+.services .fas{
+    font-size: 60px;
+    color: #f05f40;
 }
 
 .services img{
@@ -149,23 +193,19 @@ header a:hover{
 .services h1{
     margin-top: 50px;
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
 /* Gallery */
 
 .gallery{
-    width: 100%;
-    margin: 0%;
-    padding: 0%;
+    height: 440px;
+    border: 2px solid green;
 }
 
 .gallery img{
     width: 100%;
-}
-
-.gallery .gallery-img{
     width: 33.33%;
     float: left;
     margin: 0%;
@@ -177,11 +217,21 @@ header a:hover{
 .trial{
     background: #212529;
     color: #fff;
-    padding: 30px;
+    padding: 100px;
     text-align: center;
     text-transform: capitalize;
-    padding-top: 200px;
-    padding-bottom: 100px;
+}
+
+.trial .hr-light {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    max-width: 50px;
+    text-align: center;
+    border-width: 3px;
+    border-color: #fff;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .trial h1{
@@ -229,7 +279,14 @@ header a:hover{
     margin-bottom: 20px;
 }
 
-.footer p{
+.footer a{
+    text-decoration: none;
+    color: #f05f40;
+}
+
+.footer .contacts p{
     color: #212529;
     font-size: 17px;
+    font-weight: 100;
+    padding-top: 30px;
 }
