@@ -22,13 +22,13 @@ hr {
     margin-bottom: 30px;
 }
 
-
 /* Header */
 
 header{
     width: 100%;
+    height: 30px;;
     position: fixed;
-    padding: 20px;
+    padding: 10px;
     color: #c7c3c2; 
     z-index: 1;  
 }
@@ -37,8 +37,8 @@ header a{
     color: #c7c3c2;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 header ul{
@@ -53,47 +53,58 @@ header li{
 
 header .header-logo{
     float: left;
+    text-transform: uppercase;
 }
 
 header .header-logo h1{
-    margin: 0px;
+    margin: 5px;
+    font-size: 20px;
 }
 
-header nav{
+.nav{
     float: right;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
-
-header a:hover{
+.nav a:hover{
     color: #fff;
     transition: 0.4s;
 }
+
+  header.scroll  {
+    background-color: #fff;
+    color: #f05f40;
+    border-bottom: rgb(192, 192, 192) 0.7px solid;
+  }
 
 /* Slider */
 
 .slider{
     background: url('../img/bg.jpg');
-    opacity: 0.8;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position:10% 65%;
     text-align: center;
     color: #fff;
 }
 
 .slider .container{
-    padding-top: 50%;
+    padding-top: 20%;
 }
 
 .slider h1{
     margin-top: 100px;
     font-size: 55px;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .slider p{
-    color: #c7c3c2;  
+    color: #c7c3c2; 
+    font-size: 20px;
+    width: 50%;
+    margin: 0 auto;
 }
 
 
@@ -105,13 +116,19 @@ header a:hover{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 20px;
+    border-radius: 25px;
     height: 50px;
-    width: 150px;
+    width: 180px;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
-    margin: 7px 6px;
+    margin-top: 20px;
+    padding: auto;
+}
+
+.slider button:hover{
+    background-color: #f3441d;
+    transition: 0.4s;
 }
 
 /* About Us */
@@ -123,9 +140,6 @@ header a:hover{
     text-align: center;
 }
 
-.about-us .container{
-    width: 80%;
-}
 
 .about-us .hr-light {
     border: 0;
@@ -135,17 +149,21 @@ header a:hover{
     border-width: 3px;
     border-color: #fff;
     margin: auto;
+    padding: 10px;
 }
 
 .about-us h1{
-    margin-top: 50px;
-    font-size: 25px;
+    margin-top: 40px;
+    font-size: 40px;
     margin-bottom: 20px;
+    font-weight: normal;
 }
 
 .about-us p{
-    color: #c7c3c2;
-    font-size: 17px;
+    color: #c7c3c2; 
+    font-size: 18px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .about-us button{
@@ -156,53 +174,71 @@ header a:hover{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 20px;
+    border-radius: 25px;
     height: 50px;
-    width: 150px;
+    width: 180px;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
-    margin: 7px 6px;
+    margin-top: 20px;
+    padding: auto;
 }
+
+.about-us button:hover{
+    background-color: rgb(219, 218, 218);
+    transition: 0.4s;
+}
+
+
 
 /* Services */
 
 .services{
     padding: 70px;
 }
+ 
+.services .container{
+    width: 100%;
+}
 
 .services .box{
     float: left;
-    width: 22%;
+    width: 23.21%;
     padding: 10px;
     padding-bottom: 50px;
     text-align: center;
 }
 
 .services .fas{
-    font-size: 60px;
+    font-size: 70px;
     color: #f05f40;
-}
-
-.services img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .services h1{
     margin-top: 50px;
-    font-size: 25px;
+    font-size: 35px;
     margin-bottom: 50px;
     text-align: center;
+    font-weight: normal;
+}
+
+.services h2{
+    font-weight: 500;
+
+}
+
+.services p{
+    color: #817e7d; 
+    font-size: 18px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 /* Gallery */
 
-.gallery{
-    height: 440px;
-    border: 2px solid green;
-}
+.gallery  .container{
+    width: 100%;
+} 
 
 .gallery img{
     width: 100%;
@@ -212,15 +248,19 @@ header a:hover{
     padding: 0%;
 }
 
+
 /* Get Trial */
 
 .trial{
     background: #212529;
     color: #fff;
-    padding: 100px;
+    margin: 0 auto;
+    padding: 80px;
     text-align: center;
     text-transform: capitalize;
 }
+
+
 
 .trial .hr-light {
     border: 0;
@@ -236,8 +276,10 @@ header a:hover{
 
 .trial h1{
     margin-top: 50px;
-    font-size: 25px;
-    margin-bottom: 20px;
+    font-size: 35px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: normal;
 }
 
 .trial button{
@@ -248,13 +290,19 @@ header a:hover{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 20px;
+    border-radius: 25px;
     height: 50px;
-    width: 150px;
+    width: 180px;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
-    margin: 7px 6px;
+    margin-top: 20px;
+    padding: auto;
+}
+
+.trial button:hover{
+    background-color: rgb(219, 218, 218);
+    transition: 0.4s;
 }
 
 /* Footer */
@@ -269,14 +317,17 @@ header a:hover{
 .footer .fas{
     font-size: 50px;
     float: left;
-    width: 45%;
+    width: 49.5%;
     text-align: center;
+    padding-top: 30px;
 }
 
 .footer h1{
     margin-top: 50px;
-    font-size: 25px;
-    margin-bottom: 20px;
+    font-size: 35px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: normal;
 }
 
 .footer a{
@@ -284,9 +335,17 @@ header a:hover{
     color: #f05f40;
 }
 
+.footer p{
+    color: #817e7d; 
+    font-size: 15px;
+    width: 70%;
+    margin: 0 auto;
+}
+
 .footer .contacts p{
     color: #212529;
     font-size: 17px;
     font-weight: 100;
-    padding-top: 30px;
+    padding: 20px;
+    padding-bottom: 100px;
 }

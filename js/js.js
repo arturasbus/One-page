@@ -1,17 +1,25 @@
 window.onscroll = function() {myFunction()};       
 
 var header = document.getElementById("header");
-var nav = document.getElementsByTagName("a");
+var a = header.getElementsByTagName("a");
 
 function myFunction() {
-  if (window.pageYOffset > 100) {
-    header.style.background = "#fff";
-    header.classList.add("header");
-    nav.style.color = "#111";
-  } else {
-    header.style.background = "transparent";
-    header.classList.remove("header");
+  if (window.pageYOffset > 10) {
+    header.className = "scroll";
+    a.className = "aScroll";
+    
+} else {
+    header.className = "";
   }
 }
+/*
+window.onscroll = () => {
+  const nav = document.querySelector('#header');
+  if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
+};
 
-
+window.onscroll = () => {
+  const headerA = document.querySelector('#header a');
+  if(this.scrollY <= 10) headerA.className = ''; else headerA.className = 'scrolla';
+};
+*/
